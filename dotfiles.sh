@@ -3,6 +3,9 @@
 DOT_FILES=(
   .gitconfig
   .gitignore
+  .zshrc
+  .vimrc
+  .gvimrc
   Brewfile
 )
 
