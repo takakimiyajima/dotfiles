@@ -1,6 +1,8 @@
 #!/bin/sh
 
 DOT_FILES=(
+  .gitconfig
+  .gitignore
   Brewfile
 )
 

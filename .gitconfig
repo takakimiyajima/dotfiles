@@ -1,0 +1,23 @@
+[user]
+    name = Miyajima Takaki
+    email =
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+[push]
+    # カレントブランチと同名のリモートブランチがあれば、そこへpush
+    default = current
+[core]
+    # globalな.gitignoreの指定
+    excludesfile = ~/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancesto    r \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[commit]
+    template = ~/.stCommitMsg
