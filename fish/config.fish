@@ -43,4 +43,5 @@ alias gc 'git commit'
 alias gl 'git log'
 
 ## autojump
-alias j 'autojump'
+## On the premise that installing autojump (brew for me)
+[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
