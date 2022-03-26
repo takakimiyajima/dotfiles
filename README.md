@@ -10,8 +10,11 @@ $ xcode-select install
 # Install homebrew
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install dotfiles
+# set dotfiles
 $ sh dotfiles.sh
+
+# set Brewfile
+$ brew bundle
 
 # Change shell
 $ chsh -s /usr/local/bin/fish
