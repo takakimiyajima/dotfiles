@@ -51,6 +51,7 @@ cask "visual-studio-code"
 cask "vivaldi"
 cask "iterm2"
 cask "sourcetree"
+cask "slack"
 
 # if you want
 
