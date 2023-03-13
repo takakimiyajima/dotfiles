@@ -75,5 +75,13 @@ eval "$(rbenv init -)"
 # mysql
 export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 
-# node
-eval "$(nodenv init -)"
+if [[ -s “${ZDOTDIR:-$HOME}/.zprezto/init.zsh” ]]; then
+  source “${ZDOTDIR:-$HOME}/.zprezto/init.zsh”
+fi
+# Customize to your needs...
+fpath=(path/to/zsh-completions/src $fpath)
+# zsh-completionsのリロード設定
+autoload -U compinit && compinit -u
+# alias
+export VOLTA_HOME=“$HOME/.volta”
+export PATH=“$VOLTA_HOME/bin:$PATH”
