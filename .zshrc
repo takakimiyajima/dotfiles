@@ -71,6 +71,7 @@ alias gl='git log'
 # Lang  ##################################
 
 eval "$(rbenv init -)"
+eval "$(zoxide init zsh)"
 
 # mysql
 export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
